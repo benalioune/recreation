@@ -1,33 +1,521 @@
-/* Demo CSS */
+@import url(bootstrap.css);
 
-html, body {
-    margin: 0;
-    padding: 0;
+@font-face {
+  font-family: perso;
+  src: url(../fonts/LettersforLearners.ttf);
 }
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap');
 
 body {
-    font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #212529;
+  text-align: left;
+  background-color: #212528;
+  margin-left: auto;
+  margin-right: auto;
+
+  
 }
 
-table {
-    font-size: 13px;
+
+.menu{  
+  font-family:perso;
+  font-size: 1.5rem;
+  
 }
 
-.container {
-    border: 3px solid #000;
-    padding: 20px;
-    margin: 10px;
+.titre {
+  font-family:perso;
+  font-size: 1.5rem;
 }
 
-.where-are-we-box {
-    position: relative;
-    left: -20px;
-    top: -20px;
-    background-color: #bbb;
-    padding: 10px 15px;
-    display: inline-block;
+.button-menu{
+  font-size: 1rem;
 }
 
-.bold {
-    font-weight: bold;
+.dropdown-menu{
+  background-color: #778892;
 }
+
+.dropdown-item{
+  font-size: 1.5rem;
+  font-family: perso;
+  color: white;
+}
+
+.dropdown-item:hover{
+  background-color: #FFC32B;
+  color: white;
+}
+
+.table-dark{
+  font-size: 1rem;
+}
+
+.table-fontlarge{
+	font-family: perso;
+	font-size: 1.5rem;
+	color: BlanchedAlmond;
+}
+
+.table-fontlarge:hover{
+  background-color: BlanchedAlmond;
+  color: #DC3545;
+  text-decoration-color: BlanchedAlmond;
+}
+
+.consignes {
+  font-family: perso;
+  font-size: 2rem;
+  color: white;
+}
+
+.consignes2 {
+  font-family: perso;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  white-space: normal;
+  line-break: auto;
+  font-size: 0.875rem;
+  word-wrap: break-word;
+  opacity: 0;
+}
+.btn-primary{
+  background-color: #563D7C;
+  border-color: #563D7C;
+  color: white;
+}
+
+.btn-warning{
+  color: white;
+}
+
+.btn-warning:hover{
+  color: white;
+}
+
+.btn-dark{
+  background-color: #798A94;
+  border-color: #798A94;
+  color: white;
+}
+
+.btn-dark:hover{
+  background-color: #64727A;
+  border-color: #64727A;
+  color: white;
+}
+
+.btn-light{
+  background-color: #FF6600;
+  border-color: #FF6600;
+  color: white;
+}
+.btn-light:hover{
+  background-color: #E25600;
+  border-color: #E25600;
+  color: white;
+}
+
+.btn-primary:hover{
+  background-color: #3F2D5B;
+  border-color: #3F2D5B;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #3F2D5B;
+  border-color: #3F2D5B;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(86, 61, 124, 0.5);
+}
+
+.bg-primary {
+  background-color: #563D7C !important;
+}
+
+.tooltip-inner {
+  max-width: 500px;
+  padding: 0.25rem 0.5rem;
+  color: #fff;
+  text-align: left;
+  background-color: #000;
+  border-radius: 0.25rem;
+}
+
+.alert-danger {
+  color: #FFFFFF;
+  background-color: #DC3545;
+  border-color: #D64F61;
+}
+
+.alert-warning {
+  color: #000000;
+  background-color: #FFC107;
+  border-color: #FFD147;
+}
+
+.table-perso-francais {
+  font-size: 2rem;
+  font-family: perso;
+  padding: 50px 50px 50px 50px;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+.table-perso-mathematiques {
+  font-size: 2rem;
+  font-family: perso;
+  padding: 50px 50px 50px 50px;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+.table-perso-decouvertedumonde {
+  font-size: 2rem;
+  font-family: perso;
+  padding: 50px 50px 50px 50px;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+.table-perso-sport {
+  font-size: 2rem;
+  font-family: perso;
+  padding: 50px 50px 50px 50px;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+.table-perso-arts {
+  font-size: 2rem;
+  font-family: perso;
+  padding: 50px 50px 50px 50px;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+.table-perso-francais:hover {
+  background-color: BlanchedAlmond;
+  color: #DC3545;
+  text-decoration-color: BlanchedAlmond;
+}
+
+.table-perso-mathematiques:hover {
+  background-color: BlanchedAlmond;
+  color: #17A2B8;
+  text-decoration-color: BlanchedAlmond;
+}
+
+.table-perso-decouvertedumonde:hover {
+  background-color: BlanchedAlmond;
+  color: #28A745;
+  text-decoration-color: BlanchedAlmond;
+}
+
+.table-perso-sport:hover {
+  background-color: BlanchedAlmond;
+  color: #515960;
+  text-decoration-color: BlanchedAlmond;
+}
+
+.table-perso-arts:hover {
+  background-color: BlanchedAlmond;
+  color: #F8BC06;
+  text-decoration-color: BlanchedAlmond;
+}
+
+
+
+.gallery {
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+-webkit-column-width: 33%;
+-moz-column-width: 33%;
+column-width: 33%; }
+.gallery .pics {
+-webkit-transition: all 350ms ease;
+transition: all 350ms ease; }
+.gallery .animation {
+-webkit-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1); }
+
+@media (max-width: 450px) {
+.gallery {
+-webkit-column-count: 1;
+-moz-column-count: 1;
+column-count: 1;
+-webkit-column-width: 100%;
+-moz-column-width: 100%;
+column-width: 100%;
+}
+}
+
+/* jeux bouton vérifier */
+@media (max-width: 400px) {
+.btn.filter {
+padding-left: 1.1rem;
+padding-right: 1.1rem;
+}
+}
+
+.btV {
+	background-color: #A8D900;
+	color: #fff;
+}
+
+
+
+/* Image Slider */
+* {box-sizing: border-box;}
+
+.img-comp-container {
+  position: relative;
+  height: 600px; /*should be the same height as the images*/
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  vertical-align: middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+
+
+
+/*MENU*/
+
+#nav1{
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+
+ }
+ 
+ nav{
+  top: 0;
+  left: 0;
+  width: 100%;
+ }
+ 
+ #nav1 ul{
+  list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+ }
+ 
+ #nav1 a{
+  font-family: 'Caveat', cursive;
+  text-decoration: none;
+  text-align: center;
+  color: inherit;
+  display: block;
+  padding: 10px;
+  color: white;
+  font-size: 2em;
+  
+ }
+  
+ #nav1 li{
+  flex: 1 1 40%;
+  padding: 15px 0;
+  background-color: #626262;
+  max-width: 10em;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  max-height: 4.5em;
+  box-shadow: 0px 13px 19px -3px rgba(0,0,0,0.19);
+ }
+
+ #nav1 a:hover{
+   color: white;
+   text-decoration: none;
+ }
+
+
+
+ #menu-demo2, #menu-demo2 ul{
+  margin-top: 3em!important;
+  padding:0;
+  margin:0;
+  list-style:none;
+  text-align:center;
+  }
+  #menu-demo2 li{
+  box-shadow: 8px 5px 17px -3px rgba(0,0,0,0.39);
+  display:inline-block;
+  position:relative;
+  border-radius:10px 20px 0 0;
+  margin-right: -15px;
+  padding: 8;
+  }
+  #menu-demo2 ul li{
+    box-shadow: none !important;
+  margin-bottom: 4px;;
+  display:inherit;
+  border-radius:0;
+  }
+  #menu-demo2 ul li:hover{
+  border-radius:0;
+  }
+  #menu-demo2 ul li:last-child{
+  border-radius:0 0 8px 8px;
+  }
+  #menu-demo2 ul{
+  position:absolute;
+  z-index: 1000;
+  max-height:0;
+  left: 0;
+  right: 0;
+  overflow:hidden;
+  -moz-transition: .8s all .3s;
+  -webkit-transition: .8s all .3s;
+  transition: .8s all .3s;
+  }
+  #menu-demo2 li:hover ul{
+  max-height:20em;
+  }
+  /* background des liens menus */
+  #menu-demo2 li:first-child{
+  background-color: #DC3545;
+
+  }
+  #menu-demo2 li:nth-child(2){
+  background-color: #17a2b8;
+  }
+  #menu-demo2 li:nth-child(3){
+  background-color: #563d7c;
+  }
+  #menu-demo2 li:nth-child(4){
+  background-color: #28a745;
+  }
+  #menu-demo2 li:nth-child(5){
+    background-color: #ffc107;
+    }
+  #menu-demo2 li:nth-child(6){
+    background-color: #ff6600;
+  }
+  #menu-demo2 li:nth-child(7){
+    background-color: #5F2600;
+  }
+
+  #menu-demo2 li:last-child{
+    background-color: #EDEDED;
+  
+  }
+
+
+      
+  /* background des liens sous menus */
+  #menu-demo2 li:first-child li{
+  background:#992733;;
+  }
+  #menu-demo2 li:nth-child(2) li{
+  background:#147d8d;
+  }
+  #menu-demo2 li:nth-child(3) li{
+  background:#211830;
+  }
+  #menu-demo2 li:nth-child(4) li{
+  background:#1f8537;
+  }
+  #menu-demo2 li:nth-child(6) li{
+    background:#d16219;
+  }
+
+
+
+  /* background des liens menus et sous menus au survol */
+  #menu-demo2 li:first-child:hover, #menu-demo2 li:first-child li:hover{
+  background:#DC3545;
+  }
+  #menu-demo2 li:nth-child(2):hover, #menu-demo2 li:nth-child(2) li:hover{
+  background:#17a2b8;
+  }
+  #menu-demo2 li:nth-child(3):hover, #menu-demo2 li:nth-child(3) li:hover{
+  background:#392952;
+  }
+  #menu-demo2 li:nth-child(4):hover, #menu-demo2 li:nth-child(4) li:hover{
+    background:#28a745;
+  }
+  #menu-demo2 li:nth-child(6):hover, #menu-demo2 li:nth-child(6) li:hover{
+    background:#ff6600;
+    }
+  /* les a href */
+  #menu-demo2 a{
+    font-family: 'Caveat', cursive !important;
+    font-size: 1.8em;
+  text-decoration:none;
+  display:block;
+  padding:8px 32px;
+  color:#fff;
+  font-family:arial;
+  }
+  #menu-demo2 ul a{
+  padding:8px 0;
+  }
+  #menu-demo2 li:hover li a{
+  color:#fff;
+  text-transform:inherit;
+  }
