@@ -1,3 +1,4 @@
+
 @import url(bootstrap.css);
 
 @font-face {
@@ -343,7 +344,6 @@ padding-right: 1.1rem;
 }
 
 
-
 /*MENU*/
 
 #nav1{
@@ -360,6 +360,7 @@ padding-right: 1.1rem;
  }
  
  #nav1 ul{
+  margin-bottom: 3em;
   list-style-type: none;
     display: flex;
     justify-content: space-around;
@@ -396,7 +397,6 @@ padding-right: 1.1rem;
 
 
  #menu-demo2, #menu-demo2 ul{
-  margin-top: 3em!important;
   padding:0;
   margin:0;
   list-style:none;
@@ -418,6 +418,7 @@ padding-right: 1.1rem;
   }
   #menu-demo2 ul li:hover{
   border-radius:0;
+  
   }
   #menu-demo2 ul li:last-child{
   border-radius:0 0 8px 8px;
@@ -465,7 +466,6 @@ padding-right: 1.1rem;
   
   }
 
-
       
   /* background des liens sous menus */
   #menu-demo2 li:first-child li{
@@ -487,19 +487,19 @@ padding-right: 1.1rem;
 
 
   /* background des liens menus et sous menus au survol */
-  #menu-demo2 li:first-child:hover, #menu-demo2 li:first-child li:hover{
+#menu-demo2 li:first-child li:hover{
   background:#DC3545;
   }
-  #menu-demo2 li:nth-child(2):hover, #menu-demo2 li:nth-child(2) li:hover{
+  #menu-demo2 li:nth-child(2) li:hover{
   background:#17a2b8;
   }
-  #menu-demo2 li:nth-child(3):hover, #menu-demo2 li:nth-child(3) li:hover{
+#menu-demo2 li:nth-child(3) li:hover{
   background:#392952;
   }
-  #menu-demo2 li:nth-child(4):hover, #menu-demo2 li:nth-child(4) li:hover{
+#menu-demo2 li:nth-child(4) li:hover{
     background:#28a745;
   }
-  #menu-demo2 li:nth-child(6):hover, #menu-demo2 li:nth-child(6) li:hover{
+#menu-demo2 li:nth-child(6) li:hover{
     background:#ff6600;
     }
   /* les a href */
@@ -519,3 +519,82 @@ padding-right: 1.1rem;
   color:#fff;
   text-transform:inherit;
   }
+
+
+
+/* ACCUEIL */
+
+.img-home{
+  max-width: 78%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.img-home img{
+  max-width: 100%;
+}
+
+.texte_centrer {
+  max-width: 78%;
+  position: absolute;
+  height: 100px;
+  background-color: white;
+  width: 100%;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+
+}
+
+.texte_centrer h2{
+  text-align: center;
+  margin-top: 0.7em;
+  font-size: 2.4em;
+}
+  #container {
+    width: 78%;
+    margin-top: 2em!important;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 2.5em;
+    font-size: 1.2em;
+  }
+  #a {
+    border-radius: 20px;
+    width: 48%;
+    background-color: white;
+  }
+  #b {
+    width: 48%;
+    background-color: #626262;
+    border-radius: 20px;
+  }
+
+#texta{
+  padding: 50;
+  padding-left: 60  ;
+  line-height: 1.5; 
+  color: #575757;
+  font-weight: 500;
+}
+
+
+#titreb{
+  color: white;
+  padding: 50;
+  padding-left: 60  ;
+  line-height: 1.5; 
+}
+
+
+#textb{
+  background-color: white;
+  color: #575757;
+  font-weight: 500;
+  padding: 22;
+  margin-bottom: 1em;
+  border-radius: 20px;
+}
