@@ -19,7 +19,7 @@
 	    }
     </style>
 </head>
-<body>	
+	<body>	
     <div id="nav1">
         <nav>
             <ul>

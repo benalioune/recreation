@@ -41,22 +41,21 @@ class Anglais extends Controller {
                     echo '<iframe src="https://learningapps.org/watch?v=pcjsqh47t20" style="border:0px;width:100%;height:500px" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>';
                     break;
                 case 'food':
-                    
+                    echo '<iframe src="https://learningapps.org/watch?v=pv5cme8qa21" style="border:0px;width:100%;height:500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>';
                     break;
                 case 'farmfamily':
-                    
+                    echo '<iframe src="https://learningapps.org/watch?v=pgeqs1qej21" style="border:0px;width:100%;height:500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>';
                     break;
                 case 'feel':
-                    
+                    echo '<iframe src="https://learningapps.org/watch?v=pq8covb0n21" style="border:0px;width:100%;height:500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>';
                     break;
                 case 'clothes':
-                    
+                    echo '<iframe src="https://learningapps.org/watch?v=pgcb0katc21" style="border:0px;width:100%;height:500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>';
                     break;
                 case 'shoes':
-                    
+                        echo '<iframe src="https://learningapps.org/watch?v=ph19j3i4j21" style="border:0px;width:100%;height:500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>';
                     break;
                 case 'house':
-                    
                     break;
             }
 	    }
