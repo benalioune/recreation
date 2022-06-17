@@ -4,7 +4,7 @@
 
     
 <div class="img-home">
-   <img class="clipped" src="<?php echo URL.DIRECTORY_SEPARATOR."public".DIRECTORY_SEPARATOR."img".DIRECTORY_SEPARATOR."classe1.jpg"; ?>" alt=""/>
+   <img class="clipped" src="<?php echo URL."public".DIRECTORY_SEPARATOR."img".DIRECTORY_SEPARATOR."classe1.jpg"; ?>" alt=""/>
    <div class="texte_centrer" style="opacity: 0.8"><h2 style="opacity: 1;">Bienvenue à toi Pot de colle !</h2> </div>
 </div>
 
