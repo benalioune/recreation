@@ -13,6 +13,9 @@
     <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
     <!-- our JavaScript -->
     <script src="<?php echo URL; ?>public/js/application.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap" rel="stylesheet">
     <style>
 	    body {
             background-image: url('<?php echo URL."public".DIRECTORY_SEPARATOR."img".DIRECTORY_SEPARATOR."bg.jpeg"; ?>');
