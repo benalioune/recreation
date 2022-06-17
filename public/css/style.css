@@ -574,8 +574,8 @@ padding-right: 1.1rem;
   }
 
 #texta{
-  padding: 50;
-  padding-left: 60  ;
+  padding: 50px;
+  padding-left: 60px;
   line-height: 1.5; 
   color: #575757;
   font-weight: 500;
@@ -584,8 +584,8 @@ padding-right: 1.1rem;
 
 #titreb{
   color: white;
-  padding: 50;
-  padding-left: 60  ;
+  padding: 50px;
+  padding-left: 60px;
   line-height: 1.5; 
 }
 
@@ -594,7 +594,7 @@ padding-right: 1.1rem;
   background-color: white;
   color: #575757;
   font-weight: 500;
-  padding: 22;
+  padding: 22px;
   margin-bottom: 1em;
   border-radius: 20px;
 }
