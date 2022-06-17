@@ -4,7 +4,7 @@
 
     
 <div class="img-home">
-   <img class="clipped" src="classe1.jpg" alt=""/>
+   <img class="clipped" src="<?php echo URL.DIRECTORY_SEPARATOR."public".DIRECTORY_SEPARATOR."img".DIRECTORY_SEPARATOR."classe1.jpg"; ?>" alt=""/>
    <div class="texte_centrer" style="opacity: 0.8"><h2 style="opacity: 1;">Bienvenue à toi Pot de colle !</h2> </div>
 </div>
 
@@ -38,28 +38,6 @@
   </div>
 </div>
 
-		
-	</body>		
-		
-	<script>
-/*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
-initComparisons();
-</script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$('[data-toggle="tooltip"]').tooltip();   
-		});
-		
-	</script>
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166118568-1"></script>
-	<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-166118568-1');
-	</script>
+</body>
 
 </html>
