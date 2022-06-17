@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>PHP MVC Voiture</title>
+    <title>Recreation</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css -->
@@ -12,37 +12,62 @@
     <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
     <!-- our JavaScript -->
     <script src="<?php echo URL; ?>public/js/application.js"></script>
+    <style>
+	    body {
+            background-image: url('<?php echo URL."public".DIRECTORY_SEPARATOR."img".DIRECTORY_SEPARATOR."bg.jpeg"; ?>');
+            background-size: 100%;
+	    }
+    </style>
 </head>
-<body>
-<!-- header -->
-<div class="container">
-    <!-- Info -->
-    <div class="where-are-we-box">
-        Everything in this box is loaded from <span class="bold">application/views/_templates/header.php</span> !
-        <br />
-        The green line is added via JavaScript (to show how to integrate JavaScript).
+<body>	
+    <div id="nav1">
+        <nav>
+            <ul>
+                <li><a href="index.php">Accueil</a></li>
+                <li><a href="javascript:history.go(-1)">Retour</a></li>
+            </ul>
+        </nav>
     </div>
-    <h1>The header (used on all pages)</h1>
-    <!-- demo image -->
-    <h3>Demo image, to show usage of public/img folder</h3>
-    <div>
-        <img src="<?php echo URL; ?>public/img/demo-image.png" />
-    </div>
-    <!-- navigation -->
-    <h3>Menu</h3>
-    <div class="navigation">
-        <ul>
-            <!-- same like "home" or "home/index" -->
-            <li><a href="<?php echo URL; ?>"><?php echo URL; ?>home</a></li>
-            <li><a href="<?php echo URL; ?>home/exampleone"><?php echo URL; ?>home/exampleone</a></li>
-            <li><a href="<?php echo URL; ?>home/exampletwo"><?php echo URL; ?>home/exampletwo</a></li>
-            <li><a href="<?php echo URL; ?>users/"><?php echo URL; ?>home/login</a></li>
-            <!-- "songs" and "songs/index" are the same -->
-            <li><a href="<?php echo URL; ?>songs/"><?php echo URL; ?>songs/index</a></li>
+
+    <nav class="nav2">
+        <ul id="menu-demo2">
+            <li style="z-index: 10"><a href="#">Français</a>
+                <ul style="margin-top: 12px;">
+                    <li><a href="<?php echo URL."francais".DIRECTORY_SEPARATOR."lecons"; ?>">Leçons</a></li>
+                    <li><a href="<?php echo URL."francais".DIRECTORY_SEPARATOR."dictees"; ?>">Dictées</a></li>
+                    <li><a href="<?php echo URL."francais".DIRECTORY_SEPARATOR."jeux"; ?>">Jeux</a></li>
+                </ul>
+            </li>
+            <li style="z-index: 9;" ><a href="#" >Mathématiques</a>
+                <ul style="margin-top: 12px;">
+                    <li><a href="<?php echo URL."mathematiques".DIRECTORY_SEPARATOR."lecons"; ?>">Leçons</a></li>
+                    <li><a href="<?php echo URL."mathematiques".DIRECTORY_SEPARATOR."jeux"; ?>">Jeux</a></li>
+
+                </ul>
+            </li>
+            <li style="z-index: 8"><a href="#">Anglais</a>
+                <ul style="margin-top: 12px;">
+                    <li><a href="<?php echo URL."anglais".DIRECTORY_SEPARATOR."lecons"; ?>">Leçons</a></li>
+                    <li><a href="<?php echo URL."anglais".DIRECTORY_SEPARATOR."jeux"; ?>">Jeux</a></li>
+                </ul>
+            </li>
+            <li style="z-index: 7"><a href="#">Découverte du monde</a>
+                <ul style="margin-top: 12px;">
+                    <li><a href="<?php echo URL."ddm".DIRECTORY_SEPARATOR."lecons"; ?>">Leçons</a></li>
+                    <li><a href="<?php echo URL."ddm".DIRECTORY_SEPARATOR."jeux"; ?>">Jeux</a></li>
+                </ul>
+            </li>
+            <li style="z-index: 6"><a href="<?php echo URL."chorale"; ?>" >Chorales</a></li>
+            <li style="z-index: 5"><a href="#">Classe</a>
+                <ul style="margin-top: 12px;">
+                    <li><a href="<?php echo URL."classe".DIRECTORY_SEPARATOR."devoirs"; ?>">Devoirs</a></li>
+                    <li><a href="<?php echo URL."classe".DIRECTORY_SEPARATOR."quadrillage"; ?>">Quadrillage</a></li>
+                    <li><a href="<?php echo URL."classe".DIRECTORY_SEPARATOR."ecriture"; ?>">Ecriture</a></li>
+                    <li><a href="<?php echo URL."classe".DIRECTORY_SEPARATOR."tbi"; ?>">TBI</a></li>
+                    <li><a href="<?php echo URL."classe".DIRECTORY_SEPARATOR."photos"; ?>">Photos</a></li>
+                </ul>
+            </li>
+            <li style="z-index: 4"><a href="<?php echo URL."sortie"; ?>">Sorties</a></li>
+            <li style="z-index: 3"><a href="<?php echo URL."connexion"; ?>" style="color: black;">Connexion</a></li>
         </ul>
-    </div>
-    <!-- simple div for javascript output, just to show how to integrate js into this MVC construct -->
-    <h3>Demo JavaScript</h3>
-    <div id="javascript-header-demo-box">
-    </div>
-</div>
+    </nav>
