@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Recreation</title>
     <meta name="description" content="">
+    <link rel="icon" href="<?php echo URL."public".DIRECTORY_SEPARATOR."img".DIRECTORY_SEPARATOR."logo.png"; ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css -->
     <link href="<?php echo URL; ?>public/css/style.css" rel="stylesheet">
@@ -24,7 +25,7 @@
         <nav>
             <ul>
                 <li><a href="index.php">Accueil</a></li>
-		<li style="background-color: white;"><a href="index.php"><img style="width:100%; margin-top: -1em;" src="logo.png"></a></li>
+		<li style="background-color: white;"><a href="index.php"><img style="width:100%; margin-top: -1em;" src="<?php echo URL."public".DIRECTORY_SEPARATOR."img".DIRECTORY_SEPARATOR."logo.png"; ?>"></a></li>
                 <li><a href="javascript:history.go(-1)">Retour</a></li>
             </ul>
         </nav>
