@@ -24,6 +24,7 @@
         <nav>
             <ul>
                 <li><a href="index.php">Accueil</a></li>
+		<li style="background-color: white;"><a href="index.php"><img style="width:100%; margin-top: -1em;" src="logo.png"></a></li>
                 <li><a href="javascript:history.go(-1)">Retour</a></li>
             </ul>
         </nav>
